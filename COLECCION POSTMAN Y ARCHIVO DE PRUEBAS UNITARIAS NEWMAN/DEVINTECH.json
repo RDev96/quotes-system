@@ -1,0 +1,385 @@
+{
+	"info": {
+		"_postman_id": "c5f72b46-5f8e-4229-990a-5569ee435ef1",
+		"name": "DEVINTECH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4676428"
+	},
+	"item": [
+		{
+			"name": "AUTENTICATION",
+			"item": [
+				{
+					"name": "autentication administracion",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var json = pm.response.json();\r",
+									"pm.collectionVariables.set(\"token\", json.data.jwt);\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"raulcampos066@gmail.com\",\r\n    \"password\":\"raultejada1996\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/devintech/authenticate/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"devintech",
+								"authenticate",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "administrador",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"raulcampos066@gmail.com\",\r\n    \"password\":\"raultejada1996\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8083/devintech/authenticate/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"devintech",
+										"authenticate",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Nov 2024 07:32:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Autenticacion exitosa\",\n    \"data\": {\n        \"jwt\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYXVsY2FtcG9zMDY2QGdtYWlsLmNvbSIsImlhdCI6MTczMDQ0NjM3MCwiZXhwIjoxNzMwNDQ5OTcwfQ.-cfJDjoVhiqsRHeELMmIshbF6B5P-wQmaisr_8YrMws\",\n        \"permissions\": [\n            {\n                \"permission_id\": 1,\n                \"screen_name\": \"administrators\",\n                \"url\": \"administration\"\n            },\n            {\n                \"permission_id\": 2,\n                \"screen_name\": \"customers\",\n                \"url\": \"customers\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "autentication cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"velez1995@gmail.com\",\r\n    \"password\":\"velez066\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/devintech/authenticate/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"devintech",
+								"authenticate",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"velez1995@gmail.com\",\r\n    \"password\":\"velez066\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8083/devintech/authenticate/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"devintech",
+										"authenticate",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 01 Nov 2024 08:58:44 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Autenticacion exitosa\",\n    \"data\": {\n        \"jwt\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZWxlejE5OTVAZ21haWwuY29tIiwiaWF0IjoxNzMwNDUxNTI0LCJleHAiOjE3MzA0NTUxMjR9.e9w8ZCaewpMl6oYul6-jp56v794W5wc8eEMfFBjVWwY\",\n        \"permissions\": [\n            {\n                \"permission_id\": 2,\n                \"screen_name\": \"customers\",\n                \"url\": \"customers\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "PRODUCTS",
+			"item": [
+				{
+					"name": "products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/devintech/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"devintech",
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TRANSACTIONS",
+			"item": [
+				{
+					"name": "ADD TRANSACTION",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\":5,\r\n    \"product\":1,\r\n    \"email\":\"raulcampos066@gmail.com\",\r\n    \"costs\":\"[{\\\"key\\\":\\\"Flete\\\",\\\"value\\\":\\\"1.00\\\"},{\\\"key\\\":\\\"Gastos de importación\\\",\\\"value\\\":\\\"2.00\\\"},{\\\"key\\\":\\\"Seguro\\\",\\\"value\\\":\\\"1.00\\\"},{\\\"key\\\":\\\"Impuestos\\\",\\\"value\\\":\\\"13.00\\\"}]\",\r\n    \"product_weight\":3.0,\r\n    \"product_cost\":100.00,\r\n    \"added_cost\":17.00,\r\n    \"total\":117.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/devintech/api/transaction/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"devintech",
+								"api",
+								"transaction",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET TRANSACTIONS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/devintech/api/transaction/getAll?page=0&size=5&sort=id,desc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"devintech",
+								"api",
+								"transaction",
+								"getAll"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								},
+								{
+									"key": "sort",
+									"value": "id,desc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": ""
+		}
+	]
+}
