@@ -95,7 +95,7 @@ Para hacer uso tanto del aplicativo tanto en su apartado back end , front end y 
 
 Para poder hacer un mejor uso de el aplicativo puedes consultar la documentacion tecnica y el manual de usuario que se encuentran en la carpeta Documentacion en este repositorio.
 
-_Para ver el uso del aplicativo, favor ir a la documentacion de usuario [Documentacion](https://github.com/RDev96/quotessystem/tree/main/DOCUMENTOS)_
+_Para ver el uso del aplicativo, favor ir a la documentacion de usuario [Documentacion](https://github.com/RDev96/quotes-system/tree/main/DOCUMENTOS)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
